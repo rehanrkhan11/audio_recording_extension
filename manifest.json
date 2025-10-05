@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Audio Recorder (Lightweight)",
+  "version": "1.0",
+  "description": "Record microphone + Google Meet (tab) audio, merge and download the merged audio (minimal deps).",
+  "action": {
+    "default_title": "Meet Audio Recorder",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabCapture",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://meet.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
